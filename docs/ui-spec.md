@@ -1,8 +1,8 @@
 # Screen Specifications
-# Initiative: Standard Bank Delivery Squad Mobiliser
+# Initiative: Delivery Squad Mobiliser
 # Author: UI/UX Designer Chapter (Kiro Day Team)
 
-The design follows Standard Bank's enterprise brand aesthetic (Corporate Navy `#0A2240`, Cobalt Blue `#0051FF`, Clean White `#FFFFFF`, and Slate Gray `#64748B`), with strict compliance with the anti-slop visual standards: high contrast, zero arbitrary gradients, single-line badges, and clear visual hierarchy.
+The design follows Enterprise's enterprise brand aesthetic (Corporate Navy `#0A2240`, Cobalt Blue `#0051FF`, Clean White `#FFFFFF`, and Slate Gray `#64748B`), with strict compliance with the anti-slop visual standards: high contrast, zero arbitrary gradients, single-line badges, and clear visual hierarchy.
 
 ---
 
@@ -10,7 +10,7 @@ The design follows Standard Bank's enterprise brand aesthetic (Corporate Navy `#
 **Purpose:** Facilitator specifies or selects a delivery priority initiative, urgency, duration, and target roles required.
 
 **Layout:**
-- Top Header: Standard Bank Brand Shield mark, title "Delivery Squad Mobiliser", and "Preset Scenarios" quick selector bar.
+- Top Header: Enterprise Brand Shield mark, title "Delivery Squad Mobiliser", and "Preset Scenarios" quick selector bar.
 - Initiative Metadata Bar:
   - Urgency selector pill buttons (Immediate <48h, High <1w, Standard).
   - Duration selector pill buttons (2 Weeks Spike, 1 Month Sprint, 3 Months, 6 Months).
@@ -74,7 +74,7 @@ The design follows Standard Bank's enterprise brand aesthetic (Corporate Navy `#
 **Purpose:** Review and copy an executive mobilization summary for delivery governance approval.
 
 **Layout:**
-- Modal Header: Standard Bank governance stamp, title "Executive Squad Mobilisation Brief", and export actions.
+- Modal Header: Enterprise governance stamp, title "Executive Squad Mobilisation Brief", and export actions.
 - Brief Content View:
   - Executive Overview: Initiative description, timeline, and urgency.
   - Squad Composition Table: Member name, role, chapter, allocated capacity %, and key competencies.

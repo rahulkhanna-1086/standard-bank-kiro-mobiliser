@@ -31,7 +31,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div>
               <div className="flex items-center space-x-2">
                 <span className="font-extrabold tracking-tight text-lg text-white">
-                  STANDARD BANK
+                  SQUAD MOBILISER
                 </span>
                 <span className="text-blue-400 font-medium text-xs px-2 py-0.5 bg-blue-950/70 border border-blue-800/60 rounded">
                   Group Tech & Architecture
@@ -58,8 +58,8 @@ export const Header: React.FC<HeaderProps> = ({
 
             <a
               id="btn-download-project"
-              href="/standard-bank-kiro-mobiliser.zip"
-              download="standard-bank-kiro-mobiliser.zip"
+              href="/squad-mobiliser.zip"
+              download="squad-mobiliser.zip"
               className="flex items-center space-x-1.5 text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white px-3 py-2 rounded-lg border border-slate-700 transition cursor-pointer"
               title="Download entire project code, specs, and docs as a .ZIP file"
             >

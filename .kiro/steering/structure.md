@@ -33,7 +33,7 @@ src/
 │   └── KiroSpecPackModal.tsx
 ├── data/
 │   ├── talentPool.ts    # 30 Synthetic employee profiles
-│   └── scenarios.ts     # Standard Bank delivery initiatives
+│   └── scenarios.ts     # Enterprise delivery initiatives
 ├── utils/
 │   └── matchingEngine.ts# Deterministic 100-pt rubric
 ├── types.ts             # Domain models & TypeScript interfaces

@@ -63,11 +63,11 @@ export const KiroSpecPackModal: React.FC<KiroSpecPackModalProps> = ({ isOpen, on
             file: 'docs/requirements.md',
             role: '2 Business Analysts',
             content: `# Requirements (EARS Format)
-# Initiative: Standard Bank Delivery Squad Mobiliser
+# Initiative: Delivery Squad Mobiliser
 # Author: Business Analyst Chapter (Kiro Day Team)
 
 ## 1. Initiative & Role Needs Capture
-- REQ-001: The system shall provide predefined initiative templates for key Standard Bank delivery priorities (PayPulse Real-Time Clearing Modernisation, Basel IV Regulatory Risk Spike, and SME Instant Credit Assessment).
+- REQ-001: The system shall provide predefined initiative templates for key Enterprise delivery priorities (PayPulse Real-Time Clearing Modernisation, Basel IV Regulatory Risk Spike, and SME Instant Credit Assessment).
 - REQ-002: When a delivery facilitator selects an initiative template, the system shall prefill the delivery urgency, duration, allocation commitment, and target roles with their respective must-have and nice-to-have skill requirements.
 - REQ-003: When a delivery facilitator customises role requirements, the system shall allow adding, removing, and adjusting roles across the five core disciplines: Architecture, Engineering, Testing, Data, and Delivery.
 - REQ-004: When an initiative urgency is set to "Immediate (<48h)", the system shall prioritise candidates with high available capacity (>=75%) and penalise candidates with active handover friction.
@@ -99,7 +99,7 @@ export const KiroSpecPackModal: React.FC<KiroSpecPackModalProps> = ({ isOpen, on
             file: 'docs/test-cases.md',
             role: '2 Test Architects',
             content: `# Test Cases (Acceptance Criteria)
-# Initiative: Standard Bank Delivery Squad Mobiliser
+# Initiative: Delivery Squad Mobiliser
 # Author: Test Architect Chapter (Kiro Day Team)
 
 ## TC-001: Preset Initiative Template Selection
@@ -163,7 +163,7 @@ export const KiroSpecPackModal: React.FC<KiroSpecPackModalProps> = ({ isOpen, on
             file: 'docs/api-spec.md',
             role: '2 API Designers',
             content: `# API Specification
-# Initiative: Standard Bank Delivery Squad Mobiliser
+# Initiative: Delivery Squad Mobiliser
 # Author: API Designer Chapter (Kiro Day Team)
 
 ## POST /api/evaluate-candidates
@@ -192,7 +192,7 @@ Success response (200 OK):
 ---
 
 ## GET /api/scenarios
-Retrieves predefined Standard Bank initiative scenarios for rapid setup.
+Retrieves predefined Enterprise initiative scenarios for rapid setup.
 
 Success response (200 OK):
 - scenarios (array of ScenarioObject): id, title, description, urgency, duration, allocationRequired, rolesNeeded
@@ -218,11 +218,11 @@ Success response (200 OK):
             file: 'docs/ui-spec.md',
             role: '2 UI/UX Designers',
             content: `# Screen Specifications
-# Initiative: Standard Bank Delivery Squad Mobiliser
+# Initiative: Delivery Squad Mobiliser
 # Author: UI/UX Designer Chapter (Kiro Day Team)
 
 ## Screen 1: Initiative & Role Configurator
-- Top Header: Standard Bank Brand Shield mark, title "Delivery Squad Mobiliser", and "Preset Scenarios" quick selector bar.
+- Top Header: Enterprise Brand Shield mark, title "Delivery Squad Mobiliser", and "Preset Scenarios" quick selector bar.
 - Initiative Metadata Bar: Urgency selector pill buttons (Immediate <48h, High <1w, Standard), Duration selector, Allocation slider.
 - Required Roles Strip: Horizontal card deck of required positions with fulfillment counters.
 - Global Action Bar: "Auto-Assemble Squad" (primary cobalt button) and "Review Proposed Squad" drawer button.
@@ -249,7 +249,7 @@ Success response (200 OK):
             file: 'docs/architecture.md',
             role: '1-2 System Architects',
             content: `# Architecture Document
-# Initiative: Standard Bank Delivery Squad Mobiliser
+# Initiative: Delivery Squad Mobiliser
 # Author: System Architect Chapter (Kiro Day Team)
 
 ## 1. Components
@@ -289,7 +289,7 @@ Success response (200 OK):
             content: `# Persistent Steering Files (.kiro/steering/)
 
 ### .kiro/steering/product.md
-Mission: Rapidly mobilise cross-functional delivery squads for critical Standard Bank business initiatives.
+Mission: Rapidly mobilise cross-functional delivery squads for critical Enterprise business initiatives.
 Constraints: 100% Synthetic mock data for POPIA compliance. Fully transparent mathematical scoring (no black-box AI bias).
 
 ### .kiro/steering/tech.md
@@ -354,7 +354,7 @@ Objective: Verify deterministic matching engine outputs strictly 100 points maxi
         title: 'Kiro Day Showcase: What We Learnt',
         file: 'Showcase Presentation & Debrief',
         role: 'Full 2-Pizza Team (10-15 Members)',
-        content: `# Kiro Day Showcase: Standard Bank Delivery Squad Mobiliser
+        content: `# Kiro Day Showcase: Delivery Squad Mobiliser
 
 ## 1. Documentation & Specification Pack
 - Morning session focused entirely on specification rigor across 6 roles.
@@ -364,11 +364,11 @@ Objective: Verify deterministic matching engine outputs strictly 100 points maxi
 
 ## 2. The Agent Harness
 - The Harness Engineer served as the vital bridge between human specification and the AI coding agent.
-- Persistent steering files (.kiro/steering/) prevented hallucination, enforced the Standard Bank enterprise color palette, and prohibited generic AI slop.
+- Persistent steering files (.kiro/steering/) prevented hallucination, enforced the Enterprise enterprise color palette, and prohibited generic AI slop.
 - Automated hooks ensured code passed strict TypeScript validation and linting on every save.
 
 ## 3. The Working Prototype Demo
-- Solves a real Standard Bank bottleneck: turning 2-3 weeks of staffing negotiations into 60 seconds of deterministic talent matching.
+- Solves a real Enterprise bottleneck: turning 2-3 weeks of staffing negotiations into 60 seconds of deterministic talent matching.
 - Live demonstration shows:
   - Preset initiative selection (PayPulse Clearing, Basel IV Spike, SME Credit).
   - 100-point explainable scoring matrix with full point breakdown per candidate.
@@ -590,7 +590,7 @@ Objective: Verify deterministic matching engine outputs strictly 100 points maxi
         <div className="px-6 py-3.5 bg-slate-950 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
           <div className="flex items-center space-x-2">
             <ShieldCheck className="w-4 h-4 text-blue-400" />
-            <span>Standard Bank 2-Pizza Team • Morning Design to Afternoon Kiro Build</span>
+            <span>Enterprise 2-Pizza Team • Morning Design to Afternoon Kiro Build</span>
           </div>
           <button
             onClick={onClose}

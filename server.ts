@@ -27,8 +27,8 @@ if (apiKey) {
   });
 }
 
-// Known Standard Bank skill pool for grounding
-const STANDARD_BANK_SKILLS = [
+// Known Enterprise skill pool for grounding
+const CANDIDATE_SKILLS = [
   'Solutions Architecture', 'AWS Cloud', 'Microservices', 'ISO 20022', 'Kafka',
   'API Gateway', 'Zero Trust Security', 'Data Architecture', 'Kubernetes', 'Terraform',
   'Java Spring Boot', 'React', 'TypeScript', 'PostgreSQL', 'Docker', 'CI/CD Pipelines',
@@ -53,13 +53,13 @@ app.post('/api/analyze-requirement', async (req, res) => {
     try {
       const response = await ai.models.generateContent({
         model: 'gemini-3.8-flash',
-        contents: `You are a Senior Solution Architect & Agile PMO Director at Standard Bank South Africa.
+        contents: `You are a Senior Solution Architect & Agile PMO Director at Enterprise South Africa.
 Analyze this user requirement prompt and synthesize a structured Delivery Request specification for rapid squad mobilization.
 
 User requirement prompt: "${prompt}"
 
-Available Standard Bank candidate skill tags to choose from (MUST use tags from this list whenever possible):
-${STANDARD_BANK_SKILLS.join(', ')}
+Available Enterprise candidate skill tags to choose from (MUST use tags from this list whenever possible):
+${CANDIDATE_SKILLS.join(', ')}
 
 Available Disciplines:
 - Architecture
@@ -123,8 +123,8 @@ app.use(express.static(path.resolve('.', 'public')));
 
 // Dedicated download route
 app.get('/download', (_req, res) => {
-  const zipPath = path.resolve('.', 'public', 'standard-bank-kiro-mobiliser.zip');
-  res.download(zipPath, 'standard-bank-kiro-mobiliser.zip');
+  const zipPath = path.resolve('.', 'public', 'squad-mobiliser.zip');
+  res.download(zipPath, 'squad-mobiliser.zip');
 });
 
 // Setup Vite middleware for local development
@@ -145,7 +145,7 @@ async function startServer() {
   }
 
   app.listen(port, () => {
-    console.log(`[Standard Bank Mobiliser] Server running at http://localhost:${port}`);
+    console.log(`[Enterprise Mobiliser] Server running at http://localhost:${port}`);
   });
 }
 

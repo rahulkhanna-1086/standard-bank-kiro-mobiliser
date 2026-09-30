@@ -2,7 +2,7 @@
 # Tracking: Execution Plan for Afternoon Build
 
 - [x] Task 1: Initialize TypeScript domain types (`types.ts`) for Employees, DeliveryRequests, Roles, and Scoring Breakdown.
-- [x] Task 2: Build synthetic mock talent pool (`src/data/talentPool.ts`) with 30 realistic South African Standard Bank profiles and predefined scenarios (`src/data/scenarios.ts`).
+- [x] Task 2: Build synthetic mock talent pool (`src/data/talentPool.ts`) with 30 realistic South African Enterprise profiles and predefined scenarios (`src/data/scenarios.ts`).
 - [x] Task 3: Implement deterministic 100-point scoring algorithm (`src/utils/matchingEngine.ts`) with explainable point breakdowns and risk detection.
 - [x] Task 4: Build Initiative Configurator component with preset selector, urgency toggles, duration, and role slot cards.
 - [x] Task 5: Build Candidate Card component with match score radial badge, skill badges, and expandable "Why Recommended" transparency accordion.

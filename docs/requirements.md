@@ -1,10 +1,10 @@
 # Requirements (EARS Format)
-# Initiative: Standard Bank Delivery Squad Mobiliser
+# Initiative: Delivery Squad Mobiliser
 # Author: Business Analyst Chapter (Kiro Day Team)
 
 ## 1. Initiative & Role Needs Capture
 
-- REQ-001: The system shall provide predefined initiative templates for key Standard Bank delivery priorities (PayPulse Real-Time Clearing Modernisation, Basel IV Regulatory Risk Spike, and SME Instant Credit Assessment).
+- REQ-001: The system shall provide predefined initiative templates for key Enterprise delivery priorities (PayPulse Real-Time Clearing Modernisation, Basel IV Regulatory Risk Spike, and SME Instant Credit Assessment).
 - REQ-002: When a delivery facilitator selects an initiative template, the system shall prefill the delivery urgency, duration, allocation commitment, and target roles with their respective must-have and nice-to-have skill requirements.
 - REQ-003: When a delivery facilitator customises role requirements, the system shall allow adding, removing, and adjusting roles across the five core disciplines: Architecture, Engineering, Testing, Data, and Delivery.
 - REQ-004: When an initiative urgency is set to "Immediate (<48h)", the system shall prioritise candidates with high available capacity (>=75%) and penalise candidates with active handover friction.

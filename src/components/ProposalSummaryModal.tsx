@@ -30,7 +30,7 @@ export const ProposalSummaryModal: React.FC<ProposalSummaryModalProps> = ({
       : 0;
 
   const handleCopyMarkdown = () => {
-    const text = `# Standard Bank - Squad Mobilisation Proposal
+    const text = `# Squad Mobilisation Proposal
 ## Initiative: ${deliveryRequest.title} (${deliveryRequest.code})
 **Business Unit:** ${deliveryRequest.businessUnit}
 **Mobilisation Urgency:** ${deliveryRequest.urgency}
@@ -53,7 +53,7 @@ ${squad
   .join('\n\n')}
 
 ---
-*Generated via Standard Bank Delivery Squad Mobiliser (Rules-Based Engine)*
+*Generated via Delivery Squad Mobiliser (Rules-Based Engine)*
 `;
 
     try {
@@ -209,7 +209,7 @@ ${squad
           <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-3.5 space-y-1.5 text-emerald-950 text-xs">
             <div className="flex items-center space-x-1.5 font-bold">
               <FileCheck className="w-4 h-4 text-emerald-700" />
-              <span>Standard Bank Governance & Audit Certification</span>
+              <span>Enterprise Governance & Audit Certification</span>
             </div>
             <p className="leading-relaxed">
               This squad proposal was formulated using transparent, deterministic skill-matrix scoring, capacity headroom analysis, and role alignment criteria. No candidates were excluded based on unverified factors. Immediate approval can be logged with Chapter Facilitators for sprint kickoff.

@@ -1,5 +1,5 @@
 # Test Cases
-# Initiative: Standard Bank Delivery Squad Mobiliser
+# Initiative: Delivery Squad Mobiliser
 # Author: Test Architect Chapter (Kiro Day Team)
 
 ## TC-001: Preset Initiative Template Selection

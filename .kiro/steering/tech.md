@@ -4,7 +4,7 @@
 ## Technology Stack
 - **Language**: TypeScript (strict mode enabled)
 - **Frontend Framework**: React 18+ with Vite
-- **Styling**: Tailwind CSS with custom Standard Bank enterprise palette (`#0A2240` primary, `#0051FF` cobalt)
+- **Styling**: Tailwind CSS with custom Enterprise enterprise palette (`#0A2240` primary, `#0051FF` cobalt)
 - **Icons**: `lucide-react`
 - **State Management**: React state + memoized deterministic calculations
 - **Testing**: Vitest + Playwright (configured for unit & integration testing)

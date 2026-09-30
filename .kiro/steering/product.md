@@ -1,9 +1,9 @@
 # Product Steering
-# Project: Standard Bank Delivery Squad Mobiliser
+# Project: Delivery Squad Mobiliser
 # Reference: #[[file:docs/requirements.md]]
 
 ## Mission
-Empower Standard Bank delivery leads, chapter leads, and facilitators to rapidly mobilise high-performing cross-functional delivery squads for critical business initiatives.
+Empower Enterprise delivery leads, chapter leads, and facilitators to rapidly mobilise high-performing cross-functional delivery squads for critical business initiatives.
 
 ## Target Audience
 - Delivery Facilitators & Program Managers

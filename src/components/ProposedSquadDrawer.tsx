@@ -334,7 +334,7 @@ export const ProposedSquadDrawer: React.FC<ProposedSquadDrawerProps> = ({
             <ChevronRight className="w-4 h-4" />
           </button>
           <div className="flex items-center justify-between text-[11px] text-slate-500 px-1">
-            <span>Standard Bank Resource Governance Ready</span>
+            <span>Enterprise Resource Governance Ready</span>
             <span>Deterministic Rules-Based</span>
           </div>
         </div>

@@ -1,5 +1,5 @@
 # API Specification
-# Initiative: Standard Bank Delivery Squad Mobiliser
+# Initiative: Delivery Squad Mobiliser
 # Author: API Designer Chapter (Kiro Day Team)
 
 The application provides a modular client-side & proxy-ready contract defining endpoints for squad evaluation, scoring, and governance brief generation.
@@ -56,7 +56,7 @@ Optimally selects candidates for all unfilled roles in an active delivery reques
 ---
 
 ## GET /api/scenarios
-Retrieves predefined Standard Bank initiative scenarios for rapid setup.
+Retrieves predefined Enterprise initiative scenarios for rapid setup.
 
 **Success response (200 OK):**
 - scenarios (array of object)

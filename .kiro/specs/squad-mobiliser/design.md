@@ -4,7 +4,7 @@
 ## Component Hierarchy
 ```
 App
-├── Header (Standard Bank brand, title, Kiro Day Spec Pack modal trigger)
+├── Header (Enterprise brand, title, Kiro Day Spec Pack modal trigger)
 ├── InitiativeConfigurator (Scenario presets, urgency, required roles deck)
 ├── CandidateEvaluationSection
 │   ├── FilterToolbar (Search, Discipline, Location, Availability)

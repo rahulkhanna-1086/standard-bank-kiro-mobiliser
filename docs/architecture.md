@@ -1,18 +1,18 @@
 # Technical Architecture & System Specification Document
-**Initiative:** Standard Bank Delivery Squad Mobiliser  
+**Initiative:** Delivery Squad Mobiliser  
 **Role:** Senior Solution Architect (Kiro Day Experience)  
 **Author:** Rahul Khanna (Solution Architect)  
-**Target Event:** Standard Bank Kiro Day — Global Leadership Centre (GLC)  
-**Classification:** Standard Bank Internal Hackathon — 100% POPIA Compliant Mock Architecture  
+**Target Event:** Enterprise Kiro Day — Global Leadership Centre (GLC)  
+**Classification:** Enterprise Internal Hackathon — 100% POPIA Compliant Mock Architecture  
 **Document Version:** 2.0 (Production-Grade Architecture Specification)
 
 ---
 
 ## 1. Executive Summary & Problem Context
 
-In modern financial institutions like Standard Bank, the mobilization of rapid-response cross-functional delivery squads (for high-severity production incidents, regulatory mandates, or digital modernisations like PayPulse) takes **between 2 to 4 weeks** across siloed business units, resulting in delayed time-to-market and high operational cost.
+In modern financial institutions like Enterprise, the mobilization of rapid-response cross-functional delivery squads (for high-severity production incidents, regulatory mandates, or digital modernisations like PayPulse) takes **between 2 to 4 weeks** across siloed business units, resulting in delayed time-to-market and high operational cost.
 
-The **Standard Bank Delivery Squad Mobiliser** is a real-time, deterministic squad mobilization platform that matches organizational demand with internal talent in **under 60 seconds**. Built using the **AWS Kiro** specification-driven development harness, this solution operates on synthetic employee records, strictly air-gapped from live core banking infrastructure.
+The **Delivery Squad Mobiliser** is a real-time, deterministic squad mobilization platform that matches organizational demand with internal talent in **under 60 seconds**. Built using the **AWS Kiro** specification-driven development harness, this solution operates on synthetic employee records, strictly air-gapped from live core banking infrastructure.
 
 ---
 
@@ -46,7 +46,7 @@ AWS Kiro operates as a harness-driven AI engineering system. Kiro succeeds when 
 ### 3.1 C4 Level 1: System Context Diagram
 ```
 +-------------------------------------------------------------------------------+
-|                             STANDARD BANK ENTERPRISE                          |
+|                             SQUAD MOBILISER ENTERPRISE                          |
 |                                                                               |
 |   +-----------------------+              +--------------------------------+   |
 |   | Delivery Lead / PMO   |              | System Architect / Governance  |   |
@@ -144,7 +144,7 @@ The architecture is structured as a full-stack TypeScript monorepo (`thandog/nod
 
 ## 4. Mathematical Scoring Specification (Deterministic 100-Point Rubric)
 
-A core requirement from Standard Bank governance is **Zero Black-Box AI Decisions**. All candidate scoring and squad suggestions must be 100% explainable, deterministic, and auditable.
+A core requirement from Enterprise governance is **Zero Black-Box AI Decisions**. All candidate scoring and squad suggestions must be 100% explainable, deterministic, and auditable.
 
 $$\text{Total Score} = S_{\text{skills}} + S_{\text{capacity}} + S_{\text{seniority}} + S_{\text{headroom}} - P_{\text{penalties}}$$
 
@@ -259,7 +259,7 @@ export interface SquadMemberAssignment {
 ### ADR-01: Deterministic Weighted Scoring vs. LLM-Based Scoring
 - **Context:** Deciding how candidates are evaluated against squad slots.
 - **Decision:** Implement a deterministic mathematical scoring rubric rather than prompt-based LLM generation.
-- **Rationale:** Standard Bank governance and audit standards require zero hallucination, repeatable scoring, and verifiable mathematical justification for talent staffing.
+- **Rationale:** Enterprise governance and audit standards require zero hallucination, repeatable scoring, and verifiable mathematical justification for talent staffing.
 
 ### ADR-02: Client-Side Reactive Evaluation with Backend REST Compatibility
 - **Context:** Candidate scoring response time during dynamic slider adjustments.
@@ -269,7 +269,7 @@ export interface SquadMemberAssignment {
 ### ADR-03: Synthetic POPIA-Compliant Talent Pool
 - **Context:** Accessing employee data during hackathon development.
 - **Decision:** Use 30 curated synthetic South African employee profiles with realistic banking skillsets.
-- **Rationale:** Satisfies the explicit hackathon directive: *"The solution will not integrate with any Standard Bank systems, and all data used during the exercise will be mock data."* Ensures 100% POPIA compliance with zero privacy risk.
+- **Rationale:** Satisfies the explicit hackathon directive: *"The solution will not integrate with any Enterprise systems, and all data used during the exercise will be mock data."* Ensures 100% POPIA compliance with zero privacy risk.
 
 ### ADR-04: Port Configuration & Workstation Alignment
 - **Context:** Standardizing local development ports with `node-conf-starter`.
@@ -299,7 +299,7 @@ export interface SquadMemberAssignment {
 - **Rapid Iteration:** Remind the engineer: *"Coding is not the bottleneck; our clear specification is the harness that guides Kiro."*
 
 ### 7.4 Executive Showcase Pitch (What to Say to Judges at GLC)
-1. **The Hook:** *"Good afternoon. In Standard Bank, assembling a rapid-response delivery squad currently takes 2 to 4 weeks of email chains and spreadsheet approvals. Today, we built the Delivery Squad Mobiliser in AWS Kiro, cutting that cycle from 3 weeks to 60 seconds."*
+1. **The Hook:** *"Good afternoon. In Enterprise, assembling a rapid-response delivery squad currently takes 2 to 4 weeks of email chains and spreadsheet approvals. Today, we built the Delivery Squad Mobiliser in AWS Kiro, cutting that cycle from 3 weeks to 60 seconds."*
 2. **The Architecture:** *"Our solution is built on 3 core architectural pillars: 100% POPIA-compliant synthetic data, a transparent 100-point deterministic matching engine with zero black-box bias, and instant collective skill coverage analysis."*
 3. **The Live Demo:** *"Watch as we select an urgent PayPulse initiative, run one-click Auto-Assembly, inspect the explainable scoring audit log, and export an executive-ready Governance Brief."*
 4. **The Closing:** *"What we proved today is that with AWS Kiro, engineering velocity multiplies when the Solution Architect provides an airtight specification."*
