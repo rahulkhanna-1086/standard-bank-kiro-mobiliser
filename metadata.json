@@ -1,0 +1,6 @@
+{
+  "name": "Delivery Squad Mobiliser",
+  "description": "Rapid assembly of cross-functional delivery squads with rules-based skill and availability matching for Standard Bank.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
